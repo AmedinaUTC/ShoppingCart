@@ -1,8 +1,14 @@
 <template>
     <div class="container">
-       
-       <h1>My Online Store</h1>
-
+        
+       <div class="row mb-3">
+           <div class="col-md-9">
+                <h1>My Online Store</h1>
+           </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary">Cart ({{inCart.length}})</button>
+            </div>
+       </div>
        <div class="row">
            <Products
                 v-for="product in forSale" 
