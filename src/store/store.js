@@ -29,8 +29,10 @@ export default new VueX.Store({
 
     },
     mutations:{
+        ADD_TO_CART(state, invId) { state.inCart.push(invId);},
     },
     actions:{
+        addToCart(context, invId) { context.commit('ADD_TO_CART', invId);} 
     },
     getters:{
 
