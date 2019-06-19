@@ -6,7 +6,7 @@
                 <h1>My Online Store</h1>
            </div>
             <div class="col-md-3">
-                <button class="btn btn-primary">Cart ({{inCart.length}})</button>
+                <ShopCart/>
             </div>
        </div>
        <div class="row">
@@ -28,6 +28,7 @@
 <script>
    
     import Products from './components/Products.vue'
+    import ShopCart from './components/ShoppingCart.vue'
 
     export default {
         computed:{
@@ -35,7 +36,8 @@
             inCart() {return this.$store.getters.inCart}
         },
         components: {
-            Products: Products,        
+            Products: Products,   
+            ShopCart: ShopCart     
         }
     }
 </script>
