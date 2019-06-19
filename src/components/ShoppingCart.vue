@@ -16,14 +16,14 @@
               <tbody>
                 <tr v-for="(item, index) in cart" :key="index" >
                   <td>{{ item.name }}</td>
-                  <td>{{ item.price | dollars }}</td>
+                  <td>{{ item.price }}</td>
                   <td>
                     <button class="btn btn-sm btn-danger" >&times;</button>
                   </td>
                 </tr>
                 <tr>
                   <th></th>
-                  <th>{{ total | dollars }}</th>
+                  <th>{{ total }}</th>
                   <th></th>
                 </tr>
               </tbody>
@@ -55,7 +55,7 @@ export default {
    
   },
   filters: {
-    dollars,
+  
   },
   methods: {
     },
